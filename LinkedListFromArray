@@ -1,0 +1,33 @@
+ 
+ 
+ function linkedList(arr){
+    return arr.reduceRight((next, value) => ({value, next}), null);
+  }
+  
+let l = [2, 4, 5, "Hi", 4, 'World']
+  
+  console.log(linkedList(l));
+  
+  /*
+  
+  {
+  value: 2,
+    next: {
+    value: 4,
+      next: {
+      value: 5,
+        next: {
+        value: "Hi",
+          next: {
+          value: 4,
+            next: {
+            value: "World",
+              next: null
+          }
+        }
+      }
+    }
+  }
+}
+  
+  */
